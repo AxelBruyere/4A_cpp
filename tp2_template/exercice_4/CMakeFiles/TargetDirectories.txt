@@ -1,0 +1,4 @@
+/mnt/c/Users/doria/Desktop/Cours_CPE/Semestre_8/Git_Axel/4A_cpp/tp2_template/exercice_4/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/doria/Desktop/Cours_CPE/Semestre_8/Git_Axel/4A_cpp/tp2_template/exercice_4/CMakeFiles/edit_cache.dir
+/mnt/c/Users/doria/Desktop/Cours_CPE/Semestre_8/Git_Axel/4A_cpp/tp2_template/exercice_4/CMakeFiles/pgm.dir
+/mnt/c/Users/doria/Desktop/Cours_CPE/Semestre_8/Git_Axel/4A_cpp/tp2_template/exercice_4/CMakeFiles/pgm_autogen.dir
