@@ -1,7 +1,7 @@
 
 #include "vec2.hpp"
 #include "export_matlab.hpp"
-
+#include "bezier.hpp"
 
 #include <iostream>
 

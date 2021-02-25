@@ -7,7 +7,7 @@
 #include <fstream>
 
 
-void export_matlab(std::string const& filename,bezier const& b,int const sample)
+void export_matlab(std::string const& filename,bezier<float> const& b,int const sample)
 {
     //Check if the number of samples is correct
     if(sample<1 || sample>50000)

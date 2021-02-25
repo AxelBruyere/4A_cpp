@@ -7,12 +7,13 @@
 
 #include "export_matlab.hpp"
 
+
 int main()
 {
     //Call empty constructor
-    bezier b0;
+    bezier<float> b0;
     //Build a bezier with control polygon given by [P0,P1,P2,P3]
-    bezier const b1(0.0f,1.0f,1.1f,0.15f);
+    bezier<float> const b1(0.0f,1.0f,1.1f,0.15f);
 
     float const P0 = b1.coeff(0); //get P0
     float const P1 = b1.coeff(1); //get P1
@@ -21,18 +22,18 @@ int main()
     std::cout<< P1 <<std::endl; //should print 1
 
     //set Bezier coefficient for b0
-    b0.coeff(0) = 0.0f;
+    b0.coeff(0) = 0.0f; 
     b0.coeff(1) = 0.4f;
     b0.coeff(2) = 0.6f;
     b0.coeff(3) = 0.2f;
 
     //Should print on the command line
     // (1-s)^3*0+3s(1-s)^2*1+3s^2(1-s)*1.1+s^3*0.15
-    std::cout<< b1 <<std::endl;
+    //std::cout<< b1 <<std::endl;
 
     //Should print on the command line
     // (1-s)^3*0+3s(1-s)^2*0.4+3s^2(1-s)*0.6+s^3*0.2
-    std::cout<< b0 <<std::endl;
+    //std::cout<< b0 <<std::endl;
 
     //Number of samples of the Bezier curve
     int const N_sample=10;
