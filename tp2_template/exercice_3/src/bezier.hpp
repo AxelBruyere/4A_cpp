@@ -52,12 +52,13 @@ struct bezier
     };
     
     
-    //Should print on the command line
-    // (1-s)^3*p0+3s(1-s)^2*p1+3s^2(1-s)*p2+s^3*p3
-    std::ostream& operator<<(std::ostream& stream,bezier const& b)
-    {
-        stream<<"(1-s)^3*"<<b.coeff(0)<<"+(1-s)^2*s*"<<b.coeff(1)<<"+(1-s)*s^2*"<<b.coeff(2)<<"+s^3*"<<b.coeff(3);
-        return stream;
-    }   ;
+//Should print on the command line
+// (1-s)^3*p0+3s(1-s)^2*p1+3s^2(1-s)*p2+s^3*p3
+template <typename S>
+std::ostream& operator<<(std::ostream& stream,const bezier<S>& b)
+{
+    stream<<"(1-s)^3*"<<b.coeff(0)<<"+(1-s)^2*s*"<<b.coeff(1)<<"+(1-s)*s^2*"<<b.coeff(2)<<"+s^3*"<<b.coeff(3);
+    return stream;
+}   ;
     
 #endif
