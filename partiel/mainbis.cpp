@@ -39,7 +39,7 @@ Vec<N> operator+(const Vec<N>& v1, const Vec<N>& v2)
 
 int main(){
 
-
+    
     
     return 0;
 }

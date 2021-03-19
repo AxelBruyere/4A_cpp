@@ -20,6 +20,6 @@ void draw_control_polygon(QPainter& painter,bezier<vec2> const& curve);
 /** Draw on the QPainter the vertex of the control polygon given by its index */
 void draw_control_point(QPainter& painter,bezier<vec2> const& curve,int index);
 
-
+/** Draw on the QPainter the grid at given dimensions **/
 
 #endif
