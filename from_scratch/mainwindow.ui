@@ -6,24 +6,134 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>806</width>
-    <height>499</height>
+    <width>900</width>
+    <height>501</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <layout class="QVBoxLayout" name="layout_scene"/>
-    </item>
-    <item row="1" column="0">
+   <property name="minimumSize">
+    <size>
+     <width>900</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="7,3" rowminimumheight="400,3">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item row="1" column="0" colspan="2">
      <widget class="QPushButton" name="quit">
       <property name="text">
        <string>Quit</string>
       </property>
      </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="layout_scene">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="layout_rightside">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton_lay1">
+            <property name="text">
+             <string>Layout 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="radioButton_lay2">
+            <property name="text">
+             <string>Layout 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="pushButton_lay">
+            <property name="text">
+             <string>Change Layout</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="radioButton_lay3">
+            <property name="text">
+             <string>Layout 3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="radioButton_algo3">
+            <property name="text">
+             <string>Algo 3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="radioButton_algo2">
+            <property name="text">
+             <string>Algo 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton_algo1">
+            <property name="text">
+             <string>Algo 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="pushButton_algo">
+            <property name="text">
+             <string>Launch Algo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clear">
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -32,8 +142,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>806</width>
-     <height>23</height>
+     <width>900</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

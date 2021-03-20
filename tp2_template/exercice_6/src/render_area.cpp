@@ -116,8 +116,8 @@ void render_area::paintEvent(QPaintEvent*)
     painter.setPen(pen);
     if(is_clicked==true)
     {
-        painter.drawLine(mouse_point.x,mouse_point.y,
-                         closest_point.x,closest_point.y);
+        painter.drawLine(mouse_point.x, mouse_point.y,
+                         closest_point.x, closest_point.y);
     }
 
 

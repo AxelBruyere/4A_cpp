@@ -4,6 +4,9 @@
 #include <QApplication>
 #include <QMainWindow>
 #include <QWidget>
+#include <QPushButton>
+#include <QRadioButton>
+
 
 //forward declaration
 namespace Ui{
@@ -24,6 +27,7 @@ public:
 private slots:
 
     void action_quit();
+    int on_pushButton_lay_clicked();
 
 private:
 
